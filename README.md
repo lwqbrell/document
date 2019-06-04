@@ -42,7 +42,7 @@ http://live.langziphp.com/v1/translator?sentence=好好学习
 | 参数  | 类型   | 描述    | 是否必填 |
 | ----- | ------ | ------- | -------- |
 | day   | int    | 日期/号 | 是       |
-| month | string | 月份    | 是       |
+| month | int    | 月份    | 是       |
 
 使用案例：查9月4号的历史事件
 
