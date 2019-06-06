@@ -1,6 +1,6 @@
 ## 中译英
 
-地址：http://live.langziphp.com/v1/translator
+地址：http://api.langziphp.com/v1/translator
 
 方式：GET
 
@@ -12,7 +12,7 @@
 
 使用案例：翻译“好好学习”
 
-http://live.langziphp.com/v1/translator?sentence=好好学习
+http://api.langziphp.com/v1/translator?sentence=好好学习
 
 返回的数据：
 
@@ -33,7 +33,7 @@ http://live.langziphp.com/v1/translator?sentence=好好学习
 
 ## 历史上的今天
 
-地址：http://live.langziphp.com/v1/history
+地址：http://api.langziphp.com/v1/history
 
 方式：GET
 
@@ -42,11 +42,11 @@ http://live.langziphp.com/v1/translator?sentence=好好学习
 | 参数  | 类型   | 描述    | 是否必填 |
 | ----- | ------ | ------- | -------- |
 | day   | int    | 日期/号 | 是       |
-| month | int    | 月份    | 是       |
+| month | string | 月份    | 是       |
 
 使用案例：查9月4号的历史事件
 
-http://live.langziphp.com/v1/history?month=9&day=4
+http://api.langziphp.com/v1/history?month=9&day=4
 
 返回的数据：
 
@@ -83,7 +83,7 @@ http://live.langziphp.com/v1/history?month=9&day=4
 
 ## 手机归属地查询
 
-地址：http://live.langziphp.com/v1/phone
+地址：http://api.langziphp.com/v1/phone
 
 方式：GET
 
@@ -95,7 +95,7 @@ http://live.langziphp.com/v1/history?month=9&day=4
 
 使用案例：查13526735467的归属地
 
-http://live.langziphp.com/v1/phone?phone=13526735467
+http://api.langziphp.com/v1/phone?phone=13526735467
 
 返回的数据：
 
@@ -119,7 +119,7 @@ http://live.langziphp.com/v1/phone?phone=13526735467
 
 ## 成语字典
 
-地址：http://live.langziphp.com/v1/idiom
+地址：http://api.langziphp.com/v1/idiom
 
 方式：GET
 
@@ -131,7 +131,7 @@ http://live.langziphp.com/v1/phone?phone=13526735467
 
 使用案例：查一览无余的成语解释
 
-http://live.langziphp.com/v1/idiom?word=一览无余
+http://api.langziphp.com/v1/idiom?word=一览无余
 
 返回的数据：
 
@@ -165,7 +165,7 @@ http://live.langziphp.com/v1/idiom?word=一览无余
 
 ## 新华字典
 
-地址：http://live.langziphp.com/v1/xinhua
+地址：http://api.langziphp.com/v1/xinhua
 
 方式：GET
 
@@ -177,7 +177,7 @@ http://live.langziphp.com/v1/idiom?word=一览无余
 
 使用案例：查学的解释
 
-http://live.langziphp.com/v1/xinhua?word=学
+http://api.langziphp.com/v1/xinhua?word=学
 
 返回数据类型：
 
@@ -203,7 +203,7 @@ http://live.langziphp.com/v1/xinhua?word=学
 
 ## 天气查询
 
-地址：http://live.langziphp.com/v1/weather
+地址：http://api.langziphp.com/v1/weather
 
 方式：GET
 
@@ -215,7 +215,7 @@ http://live.langziphp.com/v1/xinhua?word=学
 
 使用案例：查广州的天气
 
-http://live.langziphp.com/v1/weather?city=广州
+http://api.langziphp.com/v1/weather?city=广州
 
 返回的数据：
 
@@ -244,7 +244,7 @@ http://live.langziphp.com/v1/weather?city=广州
 
 ## 空气质量
 
-地址：http://live.langziphp.com/v1/air
+地址：http://api.langziphp.com/v1/air
 
 方式：GET
 
@@ -256,7 +256,7 @@ http://live.langziphp.com/v1/weather?city=广州
 
 使用案例：查广州的空气质量
 
-http://live.langziphp.com/v1/air?city=广州
+http://api.langziphp.com/v1/air?city=广州
 
 返回的数据：
 
@@ -284,7 +284,7 @@ http://live.langziphp.com/v1/air?city=广州
 
 ## 电影查询
 
-地址：http://live.langziphp.com/v1/movie
+地址：http://api.langziphp.com/v1/movie
 
 方式：GET
 
@@ -296,7 +296,7 @@ http://live.langziphp.com/v1/air?city=广州
 
 使用案例：查询复仇者联盟的电影信息
 
-http://live.langziphp.com/v1/movie?title=复仇者联盟
+http://api.langziphp.com/v1/movie?title=复仇者联盟
 
 ```json
 {
@@ -332,7 +332,7 @@ http://live.langziphp.com/v1/movie?title=复仇者联盟
 
 ## 星座
 
-地址：http://live.langziphp.com/v1/constellation
+地址：http://api.langziphp.com/v1/constellation
 
 方式：GET
 
@@ -345,7 +345,7 @@ http://live.langziphp.com/v1/movie?title=复仇者联盟
 
 使用案例：查询查处女座一周内的运势
 
-http://live.langziphp.com/v1/constellation?constellation=处女座&date=week
+http://api.langziphp.com/v1/constellation?constellation=处女座&date=week
 
 返回的数据：
 
@@ -368,7 +368,7 @@ http://live.langziphp.com/v1/constellation?constellation=处女座&date=week
 
 ## 二维码
 
-地址：http://live.langziphp.com/v1/qr
+地址：http://api.langziphp.com/v1/qr
 
 方式：GET
 
@@ -380,7 +380,7 @@ http://live.langziphp.com/v1/constellation?constellation=处女座&date=week
 
 使用案例：生成内容为“为人民服务”的二维码
 
-http://live.langziphp.com/v1/qr?content=为人民服务
+http://api.langziphp.com/v1/qr?content=为人民服务
 
 
 
